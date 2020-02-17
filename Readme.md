@@ -10,5 +10,5 @@ Run the Spring Boot application with the built-in Tomcat server.
 
 ## Sample curl requests
 Besides a web browser you can use **curl** to invoke the REST API:
-`curl http://localhost:8080/acme/42`
-`curl http://localhost:8080/acme/all`
+* `curl http://localhost:8080/acme/42`
+* `curl http://localhost:8080/acme/all`
