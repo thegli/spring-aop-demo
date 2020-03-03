@@ -2,7 +2,6 @@ package ch.thegli.spring.aop.web;
 
 import ch.thegli.spring.aop.logging.AllPublicMethodsTraced;
 import ch.thegli.spring.aop.logging.PublicMethodDuration;
-import ch.thegli.spring.aop.logging.PublicMethodDurationLogger;
 import ch.thegli.spring.aop.model.Product;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,7 +29,7 @@ public class AcmeController {
     @PublicMethodDuration
     @RequestMapping(value = "/all", method = RequestMethod.GET, produces = "application/json")
     public Callable<List<Product>> products() {
-        List products = new ArrayList<>();
+        List<Product> products = new ArrayList<>();
         products.add(new Product("things"));
         products.add(new Product("stuff"));
         products.add(new Product("more things"));
